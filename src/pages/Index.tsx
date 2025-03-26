@@ -4,9 +4,11 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
 import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 const Index = () => {
   useEffect(() => {
@@ -32,11 +34,13 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white relative">
+    <div className="min-h-screen bg-black relative">
+      <AnimatedBackground />
       <Navbar />
       <Hero />
       <About />
       <Experience />
+      <Projects />
       <Education />
       <Skills />
       <Footer />

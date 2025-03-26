@@ -37,31 +37,31 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 md:py-28 bg-white">
+    <section id="about" className="py-20 md:py-28 relative z-10">
       <div className="section-container">
-        <h2 className="section-heading">Sobre Mim</h2>
+        <h2 className="section-heading text-white">Sobre Mim</h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="space-y-6">
-            <p className="text-lg leading-relaxed">
+          <div className="space-y-6 bg-white/10 backdrop-blur-md p-8 rounded-lg border border-white/10 shadow-xl transition-all duration-300 hover:shadow-2xl hover:bg-white/15">
+            <p className="text-lg leading-relaxed text-white/90">
               Estudante de Engenharia da Computação no IBMEC, com sólida base em desenvolvimento de 
               software e hardware. Experiência em Python, com projeto de reconhecimento de emoções 
               através de ruborização facial.
             </p>
             
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed text-white/90">
               Prática em C++ para Programação Orientada a Objetos e em C, programando Arduinos para 
               detecção de presença e calor usando sensores. Atualmente me especializando em C++, 
               com foco em IOT/Visão computacional e Python para análise de dados.
             </p>
             
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed text-white/90">
               <span className="font-semibold">Idiomas:</span> Inglês (Avançado)
             </p>
           </div>
           
           <div className="space-y-6">
-            <h3 className="text-xl font-semibold mb-4">Informações de Contato</h3>
+            <h3 className="text-xl font-semibold mb-4 text-white">Informações de Contato</h3>
             
             <div className="grid gap-4">
               {contactInfo.map((info, index) => (
@@ -70,14 +70,14 @@ const About = () => {
                     href={info.href} 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-300"
+                    className="flex items-center gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1"
                   >
-                    <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+                    <div className="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-primary/20 group-hover:bg-primary/30 transition-colors duration-300">
                       {info.icon}
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">{info.label}</p>
-                      <p className="font-medium">{info.value}</p>
+                      <p className="text-sm text-white/60">{info.label}</p>
+                      <p className="font-medium text-white">{info.value}</p>
                     </div>
                   </a>
                 </div>
