@@ -15,19 +15,18 @@ const Skills = () => {
   const skills = [
     { name: "C", category: "languages", level: 80 },
     { name: "C++", category: "languages", level: 85 },
-    { name: "Python", category: "languages", level: 75 },
+    { name: "C#", category: "languages", level: 75 },
+    { name: "Python", category: "languages", level: 70 },
     { name: "JavaScript", category: "languages", level: 65 },
     { name: "SQL", category: "languages", level: 60 },
     { name: "HTML/CSS", category: "languages", level: 75 },
     { name: "Git", category: "tools", level: 85 },
     { name: "Docker", category: "tools", level: 70 },
+    { name: "AWS", category: "tools", level: 65 },
     { name: "Arduino", category: "tools", level: 90 },
-    { name: "MQTT", category: "tools", level: 75 },
-    { name: "Pacote Office", category: "tools", level: 80 },
-    { name: "IoT", category: "other", level: 75 },
-    { name: "Visão Computacional", category: "other", level: 70 },
-    { name: "Análise de Dados", category: "other", level: 65 },
-    { name: "Cybersecurity", category: "other", level: 65 }
+    { name: "UI/UX", category: "other", level: 75 },
+    { name: "Cybersecurity", category: "other", level: 70 },
+    { name: "Networking", category: "other", level: 65 }
   ];
   
   const filteredSkills = activeCategory === "all" 

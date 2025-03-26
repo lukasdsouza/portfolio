@@ -1,5 +1,5 @@
 
-import { ArrowUp, Mail, Phone, Github, Linkedin, MapPin } from 'lucide-react';
+import { ArrowUp, Mail, Phone, GitHub, Linkedin, MapPin } from 'lucide-react';
 import AnimatedLink from './AnimatedLink';
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: <Mail className="h-5 w-5" />, href: "mailto:lukascasd@gmail.com", label: "Email" },
     { icon: <Phone className="h-5 w-5" />, href: "tel:+5521996348228", label: "Telefone" },
-    { icon: <Github className="h-5 w-5" />, href: "https://github.com/lukasrozado", label: "GitHub" },
+    { icon: <GitHub className="h-5 w-5" />, href: "https://github.com/lukasrozado", label: "GitHub" },
     { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/lukas-souza2", label: "LinkedIn" },
     { icon: <MapPin className="h-5 w-5" />, href: "https://maps.app.goo.gl/TsH9AZJ4VKGiqZ9PA", label: "Localização" },
   ];
