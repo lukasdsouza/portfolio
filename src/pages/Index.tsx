@@ -4,9 +4,11 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
 import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 const Index = () => {
   useEffect(() => {
@@ -27,19 +29,57 @@ const Index = () => {
       }
     };
     
+    // Add custom cursor trail
+    const createCursorTrail = () => {
+      const cursorTrail = document.createElement('div');
+      cursorTrail.classList.add('cursor-trail');
+      document.body.appendChild(cursorTrail);
+      
+      document.addEventListener('mousemove', (e) => {
+        cursorTrail.style.left = `${e.clientX}px`;
+        cursorTrail.style.top = `${e.clientY}px`;
+      });
+    };
+    
+    createCursorTrail();
     document.addEventListener("click", handleLinkClick);
+    
+    // Reveal animations on scroll
+    const observeElements = () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-reveal');
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+        observer.observe(el);
+      });
+    };
+    
+    observeElements();
+    
     return () => document.removeEventListener("click", handleLinkClick);
   }, []);
 
   return (
-    <div className="min-h-screen bg-white relative">
-      <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Education />
-      <Skills />
-      <Footer />
+    <div className="min-h-screen bg-black relative overflow-hidden">
+      {/* Main background */}
+      <AnimatedBackground />
+      
+      {/* Content */}
+      <div className="relative z-10">
+        <Navbar />
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Education />
+        <Skills />
+        <Footer />
+      </div>
     </div>
   );
 };
