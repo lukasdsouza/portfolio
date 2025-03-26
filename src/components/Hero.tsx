@@ -1,6 +1,7 @@
 
 import { ArrowDown } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +29,7 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-black/80 z-0"></div>
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
       
       <div 
         className="container max-w-6xl px-6 relative z-10"
@@ -41,9 +42,16 @@ const Hero = () => {
             Engenheiro de Computação
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight mb-6 text-white">
-            Lukas Chaves<br />de Souza
-          </h1>
+          <div className="flex items-center gap-6 mb-6">
+            <Avatar className="h-24 w-24 border-2 border-primary shadow-lg animate-pulse">
+              <AvatarImage src="/lovable-uploads/dd8a0634-11f3-48d8-a809-f633b0ba1e9d.png" alt="Lukas Chaves" />
+              <AvatarFallback>LC</AvatarFallback>
+            </Avatar>
+            
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight text-white">
+              Lukas Chaves<br />de Souza
+            </h1>
+          </div>
           
           <p className="text-lg md:text-xl max-w-2xl mb-8 text-white/80">
             Estudante de Engenharia da Computação no IBMEC, com foco em desenvolvimento de software e hardware, 

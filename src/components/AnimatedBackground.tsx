@@ -14,17 +14,6 @@ const AnimatedBackground = () => {
     let width = window.innerWidth;
     let height = window.innerHeight;
     
-    const resize = () => {
-      width = window.innerWidth;
-      height = window.innerHeight;
-      canvas.width = width;
-      canvas.height = height;
-      initParticles();
-    };
-
-    window.addEventListener('resize', resize);
-    resize();
-
     // Particle system
     const particleCount = 50;
     const particles: {
@@ -55,6 +44,17 @@ const AnimatedBackground = () => {
         });
       }
     };
+    
+    const resize = () => {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+      initParticles();
+    };
+
+    window.addEventListener('resize', resize);
+    resize();
 
     const animate = () => {
       // Clear canvas with slight trailing effect
