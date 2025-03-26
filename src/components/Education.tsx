@@ -6,31 +6,31 @@ const Education = () => {
     {
       institution: "IBMEC",
       degree: "Engenharia de Computação",
-      period: "2022 - Presente",
+      period: "2022 - 2025 (Previsão de conclusão: Dezembro/2025 - 7º período)",
       description: "Formação em Engenharia de Computação com foco em desenvolvimento de software e hardware."
     },
     {
-      institution: "Pluralsight & Udemy",
-      degree: "Cursos complementares",
-      period: "2020 - 2023",
-      description: "Diversos cursos nas áreas de programação, desenvolvimento web e hacking ético."
+      institution: "IBMEC",
+      degree: "Ciência de dados e inteligência artificial",
+      period: "2022 - 2026 (Previsão de conclusão: Dezembro/2026 - 5º período)",
+      description: "Formação em Ciência de Dados e Inteligência Artificial."
     }
   ];
   
   const certifications = [
-    { name: "Docker Fundamentals", issuer: "Udemy", date: "Jul/2022" },
-    { name: "API and CLI Udemy", issuer: "Udemy", date: "Jul/2023" },
-    { name: "DevOps Introduction", issuer: "Udemy", date: "Jan/2023" },
-    { name: "Webpack Fundamentals", issuer: "Udemy", date: "Jul/2023" },
-    { name: "GIT Fundamentals", issuer: "Udemy", date: "Ago/2022" },
-    { name: "AWS Certified Sol. Architect Associate", issuer: "AWS", date: "Dez/2022" },
-    { name: "IBM Technical Regional Exchange", issuer: "IBM", date: "Out/2022" },
-    { name: "Full-Stack Web Development", issuer: "IBMEC", date: "Jan/2023" },
-    { name: "Intermediate em desenvolvimento Back-end/Basic", issuer: "Udemy", date: "Dez/2023" },
-    { name: "Intermediate em desenvolvimento Front-end/Basic", issuer: "Udemy", date: "Dez/2023" },
-    { name: "Introduction to Cybersecurity", issuer: "Cisco", date: "Jun/2023" },
-    { name: "Networking Basics", issuer: "Cisco", date: "Fev/2023" },
-    { name: "Orientação a objetos em C++", issuer: "Alura", date: "Jun/2023" }
+    { name: "Docker Fundamentals", issuer: "Udemy", date: "Jul/2024" },
+    { name: "Git and GitHub", issuer: "Udemy", date: "Jul/2024" },
+    { name: "DevOps Introduction", issuer: "Udemy", date: "Jun/2024" },
+    { name: "Webpack Fundamentals", issuer: "Udemy", date: "Jul/2024" },
+    { name: "Scrum: Agility in Your Project", issuer: "Alura", date: "Set/2022" },
+    { name: "IBM Technical Regional Exchange", issuer: "IBM", date: "Out/2023" },
+    { name: "Hackathon Tech_Hubs+=Green", issuer: "IBMEC", date: "Jun/2024" },
+    { name: "Intermediário em desenvolvimento Back-end", issuer: "IBMEC", date: "Dez/2024" },
+    { name: "Intermediário em desenvolvimento Front-end", issuer: "IBMEC", date: "Dez/2024" },
+    { name: "Intermediário em Sistemas embarcados", issuer: "IBMEC", date: "Dez/2024" },
+    { name: "Introduction to Cybersecurity", issuer: "Cisco", date: "Fev/2025" },
+    { name: "Networking Basics", issuer: "Cisco", date: "Fev/2025" },
+    { name: "Orientação a objetos em C++", issuer: "Alura", date: "Fev/2025" }
   ];
 
   return (
@@ -64,7 +64,7 @@ const Education = () => {
           <div>
             <h3 className="text-xl font-semibold mb-6 flex items-center">
               <Book className="mr-2 h-5 w-5" />
-              Certificações
+              Cursos e Atividades Complementares
             </h3>
             
             <div className="grid grid-cols-1 gap-4">

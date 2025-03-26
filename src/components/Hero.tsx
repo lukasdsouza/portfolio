@@ -28,8 +28,8 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl max-w-2xl mb-8 text-muted-foreground">
-            Especialista em desenvolvimento de software e hardware, com experiência em suporte técnico
-            e paixão por soluções tecnológicas inovadoras.
+            Estudante de Engenharia da Computação no IBMEC, com foco em desenvolvimento de software e hardware, 
+            especializado em C++, Python e IoT/Visão computacional.
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -40,10 +40,10 @@ const Hero = () => {
               Entre em Contato
             </a>
             <a 
-              href="#experience" 
+              href="#projects" 
               className="px-6 py-3 bg-transparent border border-primary/20 rounded-lg hover:bg-primary/5 transition-colors duration-300"
             >
-              Ver Experiência
+              Ver Projetos
             </a>
           </div>
         </div>

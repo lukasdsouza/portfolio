@@ -44,15 +44,19 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
-              Estudante de Engenharia de Computação no IBMEC, com foco em desenvolvimento de software e hardware. 
-              Experiência em desenvolvimento web utilizando C, C++, programação para placas e chips Arduino e C#. 
-              Além disso, possuo conhecimento em programação em UX/UI, com uso em UI/UX WEB complementando a parte 
-              de experimentos em VS++, com uso em UI/UX Web.
+              Estudante de Engenharia da Computação no IBMEC, com sólida base em desenvolvimento de 
+              software e hardware. Experiência em Python, com projeto de reconhecimento de emoções 
+              através de ruborização facial.
             </p>
             
             <p className="text-lg leading-relaxed">
-              Possuo interesse pelas áreas de Programação, Segurança da Informação (hacking ético), 
-              Desenvolvimento de Jogos e Automação.
+              Prática em C++ para Programação Orientada a Objetos e em C, programando Arduinos para 
+              detecção de presença e calor usando sensores. Atualmente me especializando em C++, 
+              com foco em IOT/Visão computacional e Python para análise de dados.
+            </p>
+            
+            <p className="text-lg leading-relaxed">
+              <span className="font-semibold">Idiomas:</span> Inglês (Avançado)
             </p>
           </div>
           

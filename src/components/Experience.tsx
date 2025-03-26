@@ -7,23 +7,34 @@ const Experience = () => {
   
   const experiences = [
     {
-      role: "Engenheiro Suporte técnico",
-      company: "Quantativa Vigia do Ambiente",
-      period: "Março/2023 a Agosto/2023",
+      role: "Estagiário Suporte técnico",
+      company: "Universidade Veiga de Almeida",
+      period: "Maio/2023 a Agosto/2023",
       description: [
-        "Desenvolvimento e instalações de equipamentos, corrigindo problemas e falhas relatadas por outros colaboradores.",
-        "Configuração de softwares, operação de máquinas e empresas no melhor uso de seus ferramentas.",
-        "Elaboração de relatórios e dashboards para facilitar a tomada de decisão de gerentes."
+        "Suporte na manutenção de equipamentos, corrigindo problemas e falhas relatados por alunos e colaboradores.",
+        "Configuração de softwares, apoiando os usuários e a empresa no melhor uso de suas ferramentas.",
+        "Elaboração de relatórios e dashboards para facilitar a tomada de decisão da gerência."
       ]
     },
     {
-      role: "Formação Acadêmica",
-      company: "IBMEC",
-      period: "2022 - Presente",
+      role: "Projeto: Lixeira Inteligente",
+      company: "Monitoramento Automatizado de Resíduos",
+      period: "2023",
       description: [
-        "Estudante de Engenharia de Computação no IBMEC",
-        "Ciência de dados e inteligência artificial (Previsão de conclusão: Dezembro/2024)",
-        "Projetos acadêmicos em desenvolvimento de software e sistemas embarcados"
+        "Desenvolvimento de sistema para monitorar o nível de lixo em uma lixeira utilizando sensor ultrassônico HC-SR04, LEDs e buzzer.",
+        "Implementação de comunicação via MQTT para envio de alertas e monitoramento remoto.",
+        "O sistema detecta o nível de enchimento, acionando sinais visuais e sonoros conforme a capacidade."
+      ]
+    },
+    {
+      role: "Projeto: Visão Computacional",
+      company: "Reconhecimento de Expressões Faciais",
+      period: "2024",
+      description: [
+        "Sistema que utiliza algoritmos de Visão Computacional como YOLOv9 e Haar Cascade para reconhecimento de expressões faciais.",
+        "Capacidade de detecção de até 3 pessoas simultaneamente.",
+        "Para o compartilhamento de dados foi utilizado protocolo MQTT.",
+        "Link do repositório: github.com/mariaclaudiafreitas/Projeto-Reconhecimento-do-comportamento-humano"
       ]
     }
   ];
