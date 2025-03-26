@@ -30,7 +30,7 @@
   }
 
   * {
-    @apply border-border selection:bg-white/30 selection:text-white;
+    @apply border-border selection:bg-black/10 selection:text-black;
   }
   
   html {
@@ -38,7 +38,7 @@
   }
 
   body {
-    @apply bg-black text-white font-sans;
+    @apply bg-background text-foreground font-sans;
     overflow-x: hidden;
   }
 }
@@ -54,10 +54,6 @@
   
   .glass-card {
     @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-lg;
-  }
-
-  .neo-glass {
-    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-lg;
   }
 
   .hover-lift {
@@ -87,62 +83,4 @@
   .section-heading::before {
     @apply content-[''] absolute -bottom-2 left-0 h-[3px] w-1/2 bg-primary/80;
   }
-
-  .fluid-hover {
-    @apply transition-all duration-500 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1;
-  }
-  
-  .glow-effect {
-    @apply relative overflow-hidden;
-  }
-  
-  .glow-effect::before {
-    @apply content-[''] absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/10 via-transparent to-primary/5 opacity-0 transition-opacity duration-500;
-  }
-  
-  .glow-effect:hover::before {
-    @apply opacity-100;
-  }
-}
-
-/* Custom animations for particles */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.float-delay-1 {
-  animation-delay: 1s;
-}
-
-.float-delay-2 {
-  animation-delay: 2s;
-}
-
-.float-delay-3 {
-  animation-delay: 3s;
-}
-
-/* Add pulse animation */
-@keyframes gentle-pulse {
-  0%, 100% {
-    opacity: 0.8;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-}
-
-.gentle-pulse {
-  animation: gentle-pulse 4s ease-in-out infinite;
 }
